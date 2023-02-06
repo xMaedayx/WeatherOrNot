@@ -4,8 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(https://giphy.com/gifs/magazine-covers-reinventing-T9VKxJJvtw4Cc")
-    background-image: url(path/to/your-gif-file.gif);
+    background-image: url("https://giphy.com/gifs/magazine-covers-reinventing-T9VKxJJvtw4Cc");
     background-repeat: no-repeat;
     background-size: cover;
 }
