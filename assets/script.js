@@ -6,13 +6,7 @@ var temp = document.querySelector('#temp');
 var wind = document.querySelector('#wind');
 var humid = document.querySelector('#humidity');
 var dewPoint = document.querySelector('#dp');
-var timeEl = document.getElementById('time');
-var dateEl = document.getElementById('date');
-var currentWeatherItemsEl = document.getElementById('current-weather-items');
-var timezone = document.getElementById("time-zone");
-var countryEl = document.getElementById("country");
-var weatherForecastEl = document.getElementById('weatherForecast');
-var currentTempEl = document.getElementById("current-temp");
+
 
 apiKey = "67bcba4a97b6fcf1727eb5225f413fdd";
 
@@ -25,11 +19,26 @@ Submit.addEventListener("click", submisison)
         fetch("api.openweathermap.org/data/2.5/forecast?q="
          + city + 
          "&appid=" + apiKey
+
          )
         .then((response) => response.json())
         .then((data) => console.log(data))
+        localStorage.setItem("weatherData", JSON.stringify(data));
     }
-    function showWeather(data) { 
-        
-     }     
+    var storedData = localStorage.getItem("weatherData");
+    var weatherData = JSON.parse(storedData);
+    
+   
+   
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=London&appid=your_api_key")
+  .then(response => response.json())
+  .then(data => {
+    // Populate the weather box with data from the API
+    document.getElementById("city").innerHTML = data.name;
+    document.getElementById("temperature").innerHTML = data.main.temp + "°C";
+    document.getElementById("description").innerHTML = data.weather[0].description;
+  });
 
+    var storedData = localStorage.getItem("weatherData");
+    var weatherData = JSON.parse(storedData);
+   

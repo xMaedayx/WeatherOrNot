@@ -107,80 +107,15 @@ p{
     left: 20px; 
 }
 
-.cityBox { 
-    padding: 20px 70px;
-    color: lightsalmon 
-}
-
-.date .time{ 
-    font-size: 50px
-}
-.date{
-    font-weight: 100;
-}
- cityWeather { 
-    text-align: end;
- }
-
- .weather .display { 
-    border-radius: 20%;
- }
-
- .current-weather-items{ 
-    display: flex; 
-    flex-direction: column; 
-    background: rgb(150, 231, 107,0.8);
+.fiveContainer {
+    background-color: aquamarine;
     padding: 20px;
-    border-radius: 10px; 
-    margin: 10px 0;
-    border: 1px solid #c32ced
- }
+    width: 300px;
+    text-align: center;
+}
 
- .futureForecast { 
-    background: rgba(47, 47, 223, 0.8);
-    padding: 25px; 
-    position: fixed; 
-    bottom: 0;
-    display: flex; 
-    color: white; 
-    width: 100%;
-    align-items: center; 
-    justify-content: center; 
-    overflow-y: hidden; 
 
- }
-
- .futureForecast .today {
-background: rgba(128, 128, 255, 0.8);
-padding: 25px; 
-position: fixed; 
-bottom: 0;
-display: flex; 
-color: white; 
-width: 100%; 
-align-items: center; 
-justify-content: center; 
-overflow-y: hidden; 
-
- }
-
- .futureForecast .today .day { 
-padding: 5px 15px; 
-background:rgb(96, 240, 228);
-border-radius: 50px;
-text-align: center;
- }
-
- futureForecast { 
-    display: flex; 
- }
-
- weatherForecast{ 
-    display: flex;
- }
- 
-
-hide { 
+.display .hide { 
     display: none;
 }
 
