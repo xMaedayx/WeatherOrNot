@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="./assets/style.css">
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek" rel="stylesheet">
 </head>
@@ -9,12 +9,13 @@
   <div class="container-fluid">
     <section class="main">
       <section class="inputs">
-        <input type="text" placeholder="Enter any city..." id="cityinput">
-        <input type="submit" value="Submit" id="add">
-        <button placeholder="submit" id="add"></button>
+        <input type="text" placeholder="Enter any city..." class="cityinput">
+        <form action="api" method="post">
+          <button type="submit">Submit</button>
+        </form>
       </section>
 
-      <section class="display">
+      <section class="display hide">
         <div class="wrapper">
           <h2 id="cityoutput"></h2>
           <p id="description"></p>
@@ -25,6 +26,57 @@
         </div>
       </section>
     </section>
+
+      <div>
+        <div id="weather" class="cityWeather hide"> 
+          <div id="display">
+            <div class="time" id="time">
+              current_time
+            </div>
+            <div class="date" id="date">
+              Tuesday 7 February 2023 
+            </div>
+          </div>
+          <div class="others" id="current-weather-items">
+
+          </div>
+          <div class="cityBox" id="time-zone"> MST</div>
+          <div id="country" class="country"> Canada </div>
+
+          <div class="futureForecast">
+            <div class="today" id="current-temp">
+                <div class="day"> monday </div>
+                <div class="temp"> Night</div>
+                <div class="temp">Day</div>
+              </div>
+            <div class="weatherForecast">
+              <div class="today" id="current-temp">
+                <div class="day"> tuesday </div>
+                <div class="temp"> Night</div>
+                <div class="day">Day </div>
+              </div>          
+          </div>
+          <div class="weatherForecast">
+            <div class="today" id="current-temp">
+              <div class="day"> wednesday </div>
+              <div class="temp"> Night</div>
+              <div class="day">Day </div>
+            </div>  
+            <div class="weatherForecast">
+              <div class="today" id="current-temp">
+                <div class="day"> thursday </div>
+                <div class="temp"> Night</div>
+                <div class="day">Day </div>
+              </div>  
+              <div class="weatherForecast">
+                <div class="today" id="current-temp">
+                  <div class="day"> friday </div>
+                  <div class="temp"> Night</div>
+                  <div class="day">Day </div>
+                </div>                                        
+              </div>
+      </div>
+
 
   </div>
 </body>
