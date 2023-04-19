@@ -1,83 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./assets/style.css">
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <div class="container-fluid">
-    <section class="main">
-      <section class="inputs">
-        <input type="text" placeholder="Enter any city..." class="cityinput">
-        <article action="api" method="post">
-          <button type="submit">Submit</button>
-        </article>
-      </section>
+  <body>
+    <div class="container-fluid hide">
+      <section class="main">
+        <section class="inputs">
+          <input
+            type="text"
+            placeholder="Enter Latitude ..."
+            id="latitude"
+          />
+          <input
+          type="text"
+          placeholder="Enter Longitude ..."
+          id="longitude"
+        />
+       
+          
+          <button type="submit" id="submit">Submit</button>
+        </section>
 
-      <section class="display hide">
-        <div class="wrapper">
-          <h2 id="cityoutput"></h2>
-          <p id="description"></p>
-          <p id="temp"></p>
-          <p id="wind"></p>
-          <p id="humidity"></p>
-          <p id="dp"></p>
-        </div>
-        <section>
-          <div class="fiveContainer">
-            <h2 id="cityoutput"></h2>
-            <p id="descripion"></p>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="dp"></p>
-          </div>
-        </section>
-        <section>
-          <div class="fiveContainer">
-            <h2 id="cityoutput"></h2>
-            <p id="descripion"></p>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="dp"></p>
-          </div>
-        </section>
-        <section>
-          <div class="fiveContainer">
-            <h2 id="cityoutput"></h2>
-            <p id="descripion"></p>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="dp"></p>
-          </div>
-        </section>
-        <section>
-          <div class="fiveContainer">
-            <h2 id="cityoutput"></h2>
-            <p id="descripion"></p>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="dp"></p>
-          </div>
-        </section>
-        <section>
-          <div class="fiveContainer">
-            <h2 id="cityoutput"></h2>
-            <p id="descripion"></p>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="dp"></p>
+        <section class="display hide">
+          <div class="wrapper hide">
+            <h1 id="latitude"></h1>
+            <h1 id="longitude"></h1>
+            <p class="temp"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+            <p class="dp"></p>
           </div>
         </section>
       </section>
-    </section>
-
-  </div>
-</body>
-
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
